@@ -1,6 +1,5 @@
 import React from "react"
 import "./SkillsJavaScript.css";
-import { Outlet } from "react-router-dom";
 
 function Skills() {
     return (
