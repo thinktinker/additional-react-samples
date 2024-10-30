@@ -9,8 +9,8 @@ function Skills() {
             <p>To find out more, select a skill below:</p>
             <nav className="skills-nav">
                 <Link className="skills-link" to="javascript">JavaScript</Link> {/* Relative path */}
-                <Link className="skills-link" to="Java">Java</Link>             {/* Relative path */}
-                <Link className="skills-link" to="React">React</Link>           {/* Relative path */}
+                <Link className="skills-link" to="java">Java</Link>             {/* Relative path */}
+                <Link className="skills-link" to="react">React</Link>           {/* Relative path */}
             </nav>
             <Outlet /> {/* Render the nested route component */}
         </div>
