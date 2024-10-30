@@ -4,8 +4,7 @@ import {
   BrowserRouter,
   Routes,
   Route,
-  Link,
-  Outlet
+  Link
 } from "react-router-dom";
 
 import Home from './Home';
@@ -35,18 +34,6 @@ function App() {
         </Routes>
       </BrowserRouter>
     </>
-  );
-}
-
-function Users() {
-  return (
-    <div>
-      <nav>
-        <Link to="me">My Profile</Link>
-      </nav>
-
-      <Outlet />
-    </div>
   );
 }
 
