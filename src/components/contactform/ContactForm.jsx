@@ -1,10 +1,26 @@
 import './ContactForm.css';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 function ContactForm() {
 
   const [fullName, setfullName] = useState({firstName:"", lastName:""});
   const [contactsData, setContactsData] = useState([]);
+  const inputRef = useRef(null);
+  const [isBtnDisabled, setIsBtnDisabled] = useState(true);
+
+  useEffect(() => {
+    // Focus the input field when component mounts
+    inputRef.current.focus();
+  }, []);
+
+  useEffect(() => {
+    if (fullName.firstName.trim() && fullName.lastName.trim()) {
+      setIsBtnDisabled(false);
+    } else {
+      setIsBtnDisabled(true);
+    }
+  }, [fullName])
+
 
   const contacts = contactsData.map(contact => 
       <li key={contact.firstName + contact.lastName}>
@@ -32,7 +48,8 @@ function ContactForm() {
           placeholder="First Name"
           name = "firstName"
           value = {fullName.firstName}
-          onChange={handleChange} 
+          onChange={handleChange}
+          ref={inputRef} 
         />
         <input 
           type="text"
@@ -42,7 +59,7 @@ function ContactForm() {
           value = {fullName.lastName} 
           onChange={handleChange}
         />
-        <button>
+        <button disabled={isBtnDisabled}>
           Add Contact
         </button>
       </form>
