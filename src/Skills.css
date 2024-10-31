@@ -1,0 +1,18 @@
+.content-area{
+    width: 50%;
+    margin-left: 2rem;
+}
+
+.skills-nav{
+  width: 100%;
+  padding: 0.2rem;
+  border-radius: 8px;
+  background-color: rgba(0, 0, 0 , 0.1);
+}
+
+.skills-link{
+  font-size: 1rem;
+  padding: 0.5rem;
+  color: #d58c04;
+  text-decoration: none;
+}

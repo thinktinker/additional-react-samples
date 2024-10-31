@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+.app-nav{
+  width: 100%;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0 , 0.1);
+}
+
+.app-nav > .app-link{
+  padding: 0.5rem;
+  color: #000;
+  text-decoration: none;
+}
