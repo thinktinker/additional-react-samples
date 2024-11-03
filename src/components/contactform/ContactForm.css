@@ -1,10 +1,10 @@
 form, .contactbox {
   border: 1px solid #CCC;
   border-radius: 1rem;
-  display: block;
   width: 100%;
   padding: 1rem;
   margin: 1rem auto;
+  text-align: center;
 }
 
 form > input[type="text"]{
@@ -15,10 +15,35 @@ form > input[type="text"]{
 
 form > button{
   font-size: 1rem;
-  width: 50%;
-  margin: 0.5rem auto;
+  width: 40%;
+  margin: 0.5rem;
 }
 
 li{
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem 1rem;
+  background-color: #eee;
+  width: 50%;
+  max-width: 100%;
+  text-align: start;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.contactItem{
+  display: flex;
+  list-style-type: none;
+  padding: 0.5rem;
+}
+
+h3{
+  padding-left: 1rem;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.contactItem > button{
+  margin-left: 0.5rem;
+  padding: 0 1.5rem;
+  border-radius: 0.5rem;
 }
